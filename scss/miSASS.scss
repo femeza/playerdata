@@ -68,6 +68,19 @@ a {
     padding-right: 5px;
 }
 
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.izquierda {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
+}
+
 .section {
     padding-left: 30px;
     padding-right: 30px;
