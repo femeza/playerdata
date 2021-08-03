@@ -1,0 +1,67 @@
+$padding: 0;
+$margin: 0;
+$paddingCol: 10px;
+
+@import "responsive";
+
+.container-fluid {
+    padding-left: $padding; padding-right: $padding;
+}
+
+.row {margin:$margin;}
+
+.col-lg-12, .col-lg-8, .col-lg-6, .col-lg-4, .col-xs-6, .col-xs-12 {padding-left: $paddingCol; padding-right: $paddingCol;}
+
+.section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.centrar {
+    margin-bottom: 15px;
+}
+
+.form-margin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.list-group {
+    padding-bottom: 5px;
+}
+
+.derecha {
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.izquierda {padding-bottom: 10px;}
+
+.iconos {padding: 5px;}
+
+footer ul {margin-top: 10px;}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.texto__titulo {
+    flex: $flex;
+    justify-content: center;
+}
+
+.texto__parrafo--ubicacion {
+    flex: $flex;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.boton {padding-bottom: 10px;}
+
+.boton__espacio {padding: 5px;}

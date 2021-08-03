@@ -1,0 +1,32 @@
+@import "responsive";
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    &:hover {
+    background-color: #343a40;
+    border-color: #fff;
+}
+
+.icon{
+    transition: all;
+        &:hover{
+        transform: translate(1.5,1.5);
+        color: #00420f;
+        cursor: pointer;
+        }
+}
+
+a {
+    transition: all;
+        &:hover {
+        cursor: pointer;
+        }
+    }
+}
+
+.boton__color:hover {
+        background-color: $blanco;
+}

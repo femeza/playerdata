@@ -1,0 +1,203 @@
+@import "variables"; 
+
+$blanco: #FDFEFE;
+$verde: #27AE60;
+$grisClaro: #E5E8E8;
+$gris: #99A3A4;
+$grisOscuro: #454545;
+$negro: #000000;
+$parrafoDesktop: 20px;
+$parrafoMobile: 15px;
+
+.container-fluid {
+    width: 50%*2;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    display: flex;
+    width: (25%+25%)*2;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0; 
+    }
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline;
+    color: $blanco;
+    background-color: $grisClaro;
+    border: $gris;
+    &:hover {
+        color: $negro;
+        background-color: $grisOscuro;
+        border: $gris;
+    }
+}
+
+.btn-primary {margin-bottom: 10px;}
+
+a {
+    color: $negro;
+    text-decoration: none;
+    &:hover {
+        color: $blanco;
+        text-decoration: none;
+    }
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.achicar {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    @media only screen and (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.texto-nav {
+    font-size: 25px;
+        @media only screen and (max-width: 767px){
+            font-size: 20px;
+        }
+}
+
+$vista: desktop;
+
+@if $vista == desktop {
+    @media only screen and (min-width: 1024px) {
+        h1 {font-size: 40px;}
+        h2 {font-size: 30px;}
+        h3 {font-size: 25px;}
+        h5 {font-size: 20px;}
+        p {font-size: $parrafoDesktop;}
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width: 767px) {
+            h1 {font-size: 30px;}
+            h2 {font-size: 25px;}
+            h3 {font-size: 20px;}
+            h5 {font-size: 10px;}
+            p {font-size: $parrafoMobile;}
+            }
+}
+
+.servicio {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    @media only screen and (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.servicio__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.servicio__titulo--tamano {font-size: 30px;}
+
+.servicio__parrafo--color {color: $verde;}
+            
+footer {
+    background-color: $gris;
+    width: 100%;
+}
+
+ul {list-style-type: none;}
+
+.icon {
+    color: $blanco;
+    &:hover {
+        color: $verde;
+    }
+}
+
+.iconos {
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+}
+
+footer ul {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;}
+
+footer div ul li {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+h5 {color: $grisClaro;}
+  
+@for $i from 1 to 13 {
+    .col-#{$i} {
+        width: 100%/12*$i !important;
+    }
+}
+
+.paddingLB {
+    padding-left: 5px;;
+    padding-bottom: 10px;
+}
+
+$azul: blue; 
+$rojo: red;
+$amarillo: yellow;
+$marron: brown;
+$celeste: lightblue;
+$naranja: orange;
+
+@each $color in $azul, $rojo, $amarillo, $marron, $celeste, $naranja {
+    .boton-#{$color} {
+      background-color: $color;
+    }
+  }
+
+.boton {
+    color: $verde;
+    background-color: $blanco;
+    border: black solid;
+    &:hover {
+        color: $negro;
+        background-color: $grisOscuro;
+        border: $gris;
+    }
+}
+
+.boton-marg {margin-bottom: 10px;}

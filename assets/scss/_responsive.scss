@@ -1,0 +1,81 @@
+$flex: flex;
+
+
+.section {
+    display: $flex;
+    justify-content: center;
+}
+
+.centrar {
+    display: $flex;
+    justify-content: center;
+}
+
+.derecha {
+    display: $flex;
+    justify-content: flex-end;
+    @media only screen and (max-width: 767px) {
+        display: $flex;
+        justify-content: center;
+    }
+}
+
+.izquierda {
+    display: $flex;
+    justify-content: start;
+    @media only screen and (max-width: 767px) {
+        display: $flex;
+        justify-content: center;
+    }
+}
+
+.iconos {
+    display: $flex;
+    justify-content: center;
+}
+
+h1 { 
+    display: $flex;
+    justify-content: center;
+    @media only screen and (max-width: 767px) {
+        display: flex; 
+        justify-content: center; 
+    }
+}
+
+h3 {
+    display: $flex;
+    justify-content: center;
+    @media only screen and (max-width: 767px) {
+        display: flex; 
+        justify-content: center; 
+    }
+}
+
+footer ul {
+    display: $flex; 
+    justify-content: center; 
+}
+
+footer div ul li {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+h5 {
+    display: $flex; 
+    justify-content: center;
+    @media only screen and (max-width: 767px) {
+        display: flex; 
+        justify-content: center; 
+    }
+}
+
+.texto {
+    display: $flex;    
+}
+
+.boton {
+    display: $flex;
+    justify-content: center;
+}

@@ -1,0 +1,52 @@
+$h1Desktop: 40px;
+$h1Mobile: 35px;
+$parrafoDesktop: 20px; 
+$parrafoMobile: 15px;
+$h2Desktop: 30px;
+$h2Mobile: 25px;
+$aDesktop: 30px;
+$aMobile: 20px;
+$h5Desktop: 20px;
+$h5Mobile: 15px;
+$iconos: 40px;
+
+.navbar-expand-lg .navbar-collapse {
+    font-size: 20px;
+}
+
+.iconos {
+    font-size: $iconos;
+    padding: 5px;
+}
+
+h1 {font-size: $h1Desktop;
+    @media only screen and (max-width: 767px) {
+       font-size: $h1Mobile;
+    }
+}
+
+p {
+    font-size: $parrafoDesktop;
+    @media only screen and (max-width: 767px) {
+        font-size: $parrafoMobile;
+     }
+}
+h2 {font-size: $h2Desktop;
+    @media only screen and (max-width: 767px) {
+        font-size: $h2Mobile;
+     }
+}
+
+h5 {font-size: $h5Desktop;
+    @media only screen and (max-width: 767px) {
+        font-size: $h5Mobile;
+     }    
+}
+
+.texto__titulo--tamano {
+    font-size: 30px;
+}
+
+.texto__parrafo--tamano {
+    font-size: 20px;
+}
