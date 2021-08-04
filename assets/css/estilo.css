@@ -7277,12 +7277,12 @@ a {
 
 .servicio {
   display: flex;
-  padding-left: 150px;
+  padding-left: 50px;
   padding-right: 150px; }
   @media only screen and (max-width: 767px) {
     .servicio {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      display: flex;
+      padding: 0; } }
 
 .servicio__titulo {
   display: flex;
