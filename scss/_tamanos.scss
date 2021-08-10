@@ -1,25 +1,23 @@
 $parrafoDesktop: 20px;
 $parrafoMobile: 15px;
 
-$vista: desktop;
+$vista: mobile;
 
-@if $vista == desktop {
-    @media only screen and (min-width: 1024px) {
-        h1 {font-size: 40px;}
-        h2 {font-size: 30px;}
-        h3 {font-size: 25px;}
-        h5 {font-size: 20px;}
-        p {font-size: $parrafoDesktop;}
-        }
-    } @else if $vista == mobile {
-        @media only screen and (max-width: 767px) {
-            h1 {font-size: 30px;}
-            h2 {font-size: 25px;}
-            h3 {font-size: 20px;}
-            h5 {font-size: 10px;}
-            p {font-size: $parrafoMobile;}
-            }
-}
+h1 {font-size: 35px;}
+h2 {font-size: 30px;}
+h3 {font-size: 25px;}
+h5 {font-size: 20px;}
+p {font-size: $parrafoDesktop;} 
+
+@if $vista == mobile {
+    @media only screen and (max-width: 767px) {
+        h1 {font-size: 25px;}
+        h2 {font-size: 20px;}
+        h3 {font-size: 20px;}
+        h5 {font-size: 15px;}
+        p {font-size: $parrafoMobile;}
+    }
+}   
 
 .texto-nav {
     font-size: 25px;
