@@ -1,0 +1,42 @@
+$parrafoDesktop: 20px;
+$parrafoMobile: 15px;
+
+$vista: desktop;
+
+@if $vista == desktop {
+    @media only screen and (min-width: 1024px) {
+        h1 {font-size: 40px;}
+        h2 {font-size: 30px;}
+        h3 {font-size: 25px;}
+        h5 {font-size: 20px;}
+        p {font-size: $parrafoDesktop;}
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width: 767px) {
+            h1 {font-size: 30px;}
+            h2 {font-size: 25px;}
+            h3 {font-size: 20px;}
+            h5 {font-size: 10px;}
+            p {font-size: $parrafoMobile;}
+            }
+}
+
+.texto-nav {
+    font-size: 25px;
+        @media only screen and (max-width: 767px){
+            font-size: 20px;
+        }
+}
+
+.iconos {
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+}
+
+.tamanoH5 {
+    font-size: 20px;
+    @media only screen and (max-width: 767px) {
+        font-size: 15px;
+    }
+}

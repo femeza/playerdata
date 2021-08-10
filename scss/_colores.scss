@@ -1,0 +1,52 @@
+$color-1: #82e0aa;
+$color-2: #fdfefe;
+$color-3: #17202a;
+$color-4: #7f8c8d;
+$color-5: #229954;
+$color-6: #27ae60;
+
+.btn {
+    display: inline;
+    color: $color-2;
+    background-color: $color-4;
+    border: $color-1;
+    &:hover {
+        color: $color-3;
+        background-color: $color-4;
+        border: $color-1;
+    }
+}
+
+a {
+    color: $color-3;
+    text-decoration: none;
+    &:hover {
+        color: $color-2;
+        text-decoration: none;
+    }
+}
+
+footer {
+    background-color: $color-4;
+    width: 100%;
+}
+
+.icon {
+    color: $color-2;
+    &:hover {
+        color: $color-5;
+    }
+}
+
+.boton {
+    color: $color-3;
+    background-color: $color-2;
+    border: black solid;
+    &:hover {
+        color: $color-2;
+        background-color: $color-3;
+        border: $color-1;
+    }
+}
+
+h5 {color: $color-2;}
