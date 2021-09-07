@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container-fluid {
     width: 50%*2;
     padding-right: 0;
@@ -21,6 +26,10 @@
 
 .fixed {
     position: fixed;
+}
+
+.btn-block {
+    padding-bottom: 15px;
 }
 
 .btn-block {
@@ -94,4 +103,12 @@ footer div ul li {
 .paddingLB {
     padding-left: 5px;;
     padding-bottom: 10px;
+}
+
+.paddingB {
+    padding-bottom: 10xp;
+}
+
+.fixed {
+    position: fixed;
 }
